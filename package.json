@@ -1,0 +1,42 @@
+{
+  "name": "dictaflow",
+  "version": "1.0.0",
+  "description": "Intelligent voice dictation desktop app",
+  "main": "src/main.js",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "electron:dev": "electron .",
+    "start": "npm run build && electron .",
+    "package": "npm run build && electron-builder build --win"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.0",
+    "electron": "^30.0.9",
+    "electron-builder": "^24.13.3",
+    "vite": "^5.2.11"
+  },
+  "build": {
+    "appId": "com.dictaflow.app",
+    "productName": "DictaFlow",
+    "win": {
+      "target": "portable",
+      "icon": "src/assets/logo_white.png"
+    },
+    "files": [
+      "dist/**/*",
+      "src/**/*",
+      "package.json"
+    ],
+    "directories": {
+      "output": "dist-electron"
+    }
+  }
+}
