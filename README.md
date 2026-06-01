@@ -1,4 +1,9 @@
+<p align="center">
+  <img src="src/assets/banner.jpg" alt="DictaFlow Banner" width="100%">
+</p>
+
 # 🎙️ DictaFlow
+
 
 DictaFlow é um aplicativo desktop de ditado por voz inteligente e minimalista. Ele ouve a sua fala, processa o áudio através de modelos avançados de Inteligência Artificial para corrigir imperfeições (gagueiras, erros de concordância, repetições) e **digita/injeta o resultado formatado diretamente no campo em que seu cursor estava ativo**.
 
